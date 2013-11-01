@@ -11,9 +11,9 @@ public class Search {
 		 
 		 //System.out.println("Enter the complete path for the product json file\n");
 		 
-	     String dataFilePath = "/home/lavanya/Downloads/ruby-inmemory/data.json";
+	     String dataFilePath = "../input/data.json";
 	    // System.out.println("Enter the complete path for the query json file");
-	     String queryFilePath = "/home/lavanya/Downloads/ruby-inmemory/short_query.json";
+	     String queryFilePath = "../input/short_query.json";
 	     PreProcess preprocess = new PreProcess();
 	     
 	     HashMap<String, ArrayList<Integer>> queryIndex = new HashMap<String, ArrayList<Integer>>();
@@ -23,10 +23,11 @@ public class Search {
 	    
 	    
 	     int j = 40;
+	     System.out.println("Sample 40 records for testing");
 	     while(j>0)
 	     {
 	    	 Query tmp = queryList.get(j);
-	    	 System.out.println(tmp.getArtist()+ "&&&&" +tmp.getQuery() +"&&&&&" + tmp.getProductName()+"****");
+	    	 System.out.println("Artist:" + tmp.getArtist()+ "\t Query:" +tmp.getQuery() +"\t Product:"  + tmp.getProductName());
 	    	 j--;
 	     }
 	     
